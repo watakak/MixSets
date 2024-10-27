@@ -1,0 +1,11 @@
+--- Client-side ---
+
+1. !!! Show Greetings message/messages !!!
+2. Show FPS
+3. Blur /register or /reg and /login or /l command
+4. Model Gap Fix
+5. Title Fix
+6. Tooltip Fix
+7. Linux Keyboard fix
+8. Lower shield/Lower fire
+9. !!! Title Clearing Fixer !!!
