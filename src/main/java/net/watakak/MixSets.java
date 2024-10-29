@@ -42,19 +42,23 @@ public class MixSets implements ModInitializer {
 		MinecraftClient client = MinecraftClient.getInstance();
 
 		// Проверка настройки OnlyInWorld
-		if (client != null && (client.world != null || !config.isFpsOnlyInWorld())) {
-			int fps = client.getCurrentFps();
-			String fpsText = "FPS: " + fps;
+		if (client != null) {
+			// Проверка, что F3 (режим отладки) не активен
+			if (!client.options.debugEnabled) {
+				int fps = client.getCurrentFps();
+				String fpsText = "FPS: " + fps;
 
-			// Установка позиции отображения
-			int x = "right".equals(config.getFpsPosition())
-					? client.getWindow().getScaledWidth() - client.textRenderer.getWidth(fpsText) - 6
-					: 6;
-			int y = 6; // Можно изменить на другой отступ по вертикали
+				// Установка позиции отображения
+				int x = "right".equals(config.getFpsPosition())
+						? client.getWindow().getScaledWidth() - client.textRenderer.getWidth(fpsText) - 6
+						: 6;
+				int y = 6; // Можно изменить на другой отступ по вертикали
 
-			context.drawTextWithShadow(client.textRenderer, fpsText, x, y, 0xFFFFFF);
+				context.drawTextWithShadow(client.textRenderer, fpsText, x, y, 0xFFFFFF);
+			}
 		}
 	}
+
 
 	public static MixSetsConfig getConfig() {
 		return config;
