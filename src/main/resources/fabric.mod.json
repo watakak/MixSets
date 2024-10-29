@@ -3,12 +3,12 @@
 	"id": "mixsets",
 	"version": "${version}",
 	"name": "MixSets",
-	"description": "Configure many Client/Server functions as you want!",
+	"description": "A Lot of Fixes and Tools in Single Minecraft Mod!",
 	"authors": [
 		"watakak"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://modrinth.com/mod/mixsets",
 		"sources": "https://github.com/watakak/mixsets"
 	},
 	"license": "MIT",

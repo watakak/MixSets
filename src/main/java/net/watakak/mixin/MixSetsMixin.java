@@ -18,6 +18,7 @@ public abstract class MixSetsMixin {
 	@Final
 	public InGameHud inGameHud;
 
+	// Title Clearing Fix
 	@Inject(method = "disconnect(Lnet/minecraft/client/gui/screen/Screen;)V", at = @At("HEAD"))
 	private void clearTitleMixin(Screen screen, CallbackInfo info) {
 		// Проверка настройки TitleClearingFix

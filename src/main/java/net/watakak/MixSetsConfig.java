@@ -61,9 +61,42 @@ public class MixSetsConfig {
         return new ArrayList<>(Arrays.asList(messages.split(",")));
     }
 
-    // Title Clearing Fix - DuncanRuns
+    // Title Fix Mod - DuncanRuns
     public boolean isTitleClearingFixEnabled() {
         return Boolean.parseBoolean(properties.getProperty("TitleClearingFix", "true"));
+    }
+
+    // FixBookGUI - KosmoMoustache
+    public boolean isCenteredBook() {
+        return Boolean.parseBoolean(properties.getProperty("CenteredBook", "true"));
+    }
+
+    // ToolTipFix - kyrptonaught
+    public boolean isToolTipFix() {
+        return Boolean.parseBoolean(properties.getProperty("ToolTipFix", "true"));
+    }
+
+    // List Entry Highlight Fix - LX86
+    public boolean isServerListSelectionFix() {
+        return Boolean.parseBoolean(properties.getProperty("ServerListSelectionFix", "true"));
+    }
+
+    // Fast IP Ping - JustAlittleWolf
+    public boolean isFastServerIPPing() {
+        return Boolean.parseBoolean(properties.getProperty("FastServerIPPing", "true"));
+    }
+
+    // FPS Display - watakak
+    public boolean isFpsDisplayEnabled() {
+        return Boolean.parseBoolean(properties.getProperty("FPS", "true"));
+    }
+
+    public boolean isFpsOnlyInWorld() {
+        return Boolean.parseBoolean(properties.getProperty("FPS.OnlyInWorld", "true"));
+    }
+
+    public String getFpsPosition() {
+        return properties.getProperty("FPS.Position", "Left").toLowerCase();
     }
 
     public void setProperty(String key, String value) {

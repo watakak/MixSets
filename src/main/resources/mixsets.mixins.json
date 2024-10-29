@@ -3,7 +3,8 @@
 	"package": "net.watakak.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"MixSetsMixin"
+		"MixSetsMixin", "BookEditMixin", "BookMixin", "BookLecternMixin", "ToolTipMixin", "ToolTipAccessorMixin",
+		"ServerListSelectionMixin", "ServerListPingerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
