@@ -99,6 +99,16 @@ public class MixSetsConfig {
         return properties.getProperty("FPS.Position", "Left").toLowerCase();
     }
 
+    // RemoveBlockOutline - xzeldon
+    public boolean isRemoveBlockOutline() {
+        return Boolean.parseBoolean(properties.getProperty("RemoveBlockOutline", "false"));
+    }
+
+    // Better Ping Display - vladmarica
+    public boolean isBetterPingDisplay() {
+        return Boolean.parseBoolean(properties.getProperty("BetterPingDisplay", "true"));
+    }
+
     public void setProperty(String key, String value) {
         properties.setProperty(key, value);
         try (FileOutputStream output = new FileOutputStream(CONFIG_FILE)) {

@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +17,7 @@ public class MixSets implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Initializing MixSets 0.0.4");
+		LOGGER.info("Initializing MixSets 0.0.56");
 
 		// Greetings - отображаем только один раз за сессию
 		if (config.isGreetingsEnabled()) {
