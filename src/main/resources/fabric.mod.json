@@ -30,5 +30,10 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"loom:injected_interfaces": {
+			"net/minecraft/client/gui/DrawContext": ["net/watakak/DrawContextFloatDrawTexture"]
+		}
 	}
 }

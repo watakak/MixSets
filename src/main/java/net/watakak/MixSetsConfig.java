@@ -91,10 +91,6 @@ public class MixSetsConfig {
         return Boolean.parseBoolean(properties.getProperty("FPS", "true"));
     }
 
-    public boolean isFpsOnlyInWorld() {
-        return Boolean.parseBoolean(properties.getProperty("FPS.OnlyInWorld", "true"));
-    }
-
     public String getFpsPosition() {
         return properties.getProperty("FPS.Position", "Left").toLowerCase();
     }
@@ -107,6 +103,26 @@ public class MixSetsConfig {
     // Better Ping Display - vladmarica
     public boolean isBetterPingDisplay() {
         return Boolean.parseBoolean(properties.getProperty("BetterPingDisplay", "true"));
+    }
+
+    // Fadeless - DerpDerpling
+    public boolean isDisableFadeTransitions() {
+        return Boolean.parseBoolean(properties.getProperty("DisableFadeTransitions", "false"));
+    }
+
+    // Centered Crosshair - JustAlittleWolf
+    public boolean isCrosshairPositionFix() {
+        return Boolean.parseBoolean(properties.getProperty("CrosshairPositionFix", "true"));
+    }
+
+    // SmoothMenu Refabricated - shizotoaster
+    public boolean isDisableMenuFPSLimit() {
+        return Boolean.parseBoolean(properties.getProperty("DisableMenuFPSLimit", "true"));
+    }
+
+    // Riding Mouse Fix - shizotoaster
+    public boolean isEntityMouseMovingFix() {
+        return Boolean.parseBoolean(properties.getProperty("EntityMouseMovingFix", "true"));
     }
 
     public void setProperty(String key, String value) {

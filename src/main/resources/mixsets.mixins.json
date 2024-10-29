@@ -5,7 +5,8 @@
 	"mixins": [
 		"MixSetsMixin", "BookEditMixin", "BookMixin", "BookLecternMixin", "ToolTipMixin", "ToolTipAccessorMixin",
 		"ServerListSelectionMixin", "ServerListPingerMixin", "BlockOutlineMixin", "TabPlayerListInvokerMixin",
-		"TabPlayerListMixin"
+		"TabPlayerListMixin", "MainMenuFadeMixin", "TitleScreenFadeMixin", "InGameHudMixin", "DrawContextMixin",
+		"SmoothMenuMixin", "EntityMouseMovingMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
